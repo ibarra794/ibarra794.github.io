@@ -1,42 +1,822 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio - Lucas Ibarra</title>
-    </head>
-    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="6ltn5r952vmk3pp"></script>
-    <body>
-        <h1>Lucas Ibarra</h1>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALwAyAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EADsQAAIBAwMCBAQDBgUEAwAAAAECAwAEEQUSITFBEyJRYQYUMnEjgZEzQlKhwdEHFWKx8CRTkuEWNEP/xAAbAQADAQEBAQEAAAAAAAAAAAACAwQBAAUGB//EACcRAAICAgIBBQACAwEAAAAAAAABAhEDIRIxBAUTIkFRBtEyYZEU/9oADAMBAAIRAxEAPwDBTaajtlc0snSS0kLIMp6mnCz3KR8xZB716dreS3KOAWb+VSQ2iC/0QCZMlt3m9Ka6Npq3srNI2FAzXLextJIihHmHcVU8M0DlLaRlX1rJrdI209Id/I2kbt4Yyo60ZbWMDHyLtL8A0BazERrDBFgD6mPOaaM7qqxFtq7c5xU8o8ds4l8mqy+Cc7x3q1pILKLIQFwPSl6yi2DTO7M7nAyalqd2La2DunmxTlHVgTdqkL7m8upkkmZVRR0pReXU80XhqmMdSB1ph8xFexqI0dAOvoa6zRLuw6Lj1qvFilk76OxY3ZzR28WGT5sgOeFLU7i1YxWItG8NowMZHp60ge7hgXcGjb7c/wC9L7zUD5xE5APQg9qOfiY3/kVLCux1LucKIJvwQcYNHW+pRrD8jcpEYyc7w1Y+01ByREclQc5zmjjfWzs28YAGT25oP/Fhkto320naNdeTRxwrsPlC+UetK7aXx2fxD4Z/dz3oKzvYMDLSMF6KwzmipLjT5hu3FHUZxnFJy+NJO+xDxtAVzp7TSF7m5XC8c1do1nZm4ZXYHH00o1JhI6+HIzE9jRFjdG1uLdp0xGp8xpcsbao3juhvq+jXMfhPAnlfo2aRsuoW8slsJD5uuOa2T6pbXUFzic+FEm5ATWKs9UW2vvHkTcuehovbpDOFdGg0i2uZWFtJI3hhctV+EhQqFXKnr0qqx+Io7GaS5aLKzLhR6VZqFuupyRvDIACu5gppcsSqwWtHXvo45cIzZI82TVsV3GUImfdnil93DFaWyGRsN70BqDusMUkJwppLxt6Aq/oIvJLQIWiyzelepZDGfDL85+9ep1NAtBa6k3mhZWWo25OHyjEnpmjHWMNuYAN64q+SaNlDBQSOwFapfiMbF4G112jb6g1ZIoZQ27zDtQ+pXZZQVXBzigWunQ5PNMimaotmhtLxYIGSQAHsaJiv4yqy3Mg21kmuHlXaCR6ZriiTYRIcr6GtcFLs3iaPWLyJ9q2+H53cdqnPexXWmxpOhDDqaz9jIFm83Of5URfyhYAmeR5uKbjx8576NjDZO9vzHH4cK4JHTNApPOqbhtPseaCVizkynrRCGRciFSfer+SopUXZTc3Uj9v04oR9zelOodNu70Z8EgfapyaLIiZCYI6gnmp5O3Y9QYlhkdF4XHvmpqGc5Yxn7mjpNOncZMTD2x0oT5Zo5NjYU+jCtUvoxwaLI3Zf39o/0CmMEZn6AsRz1oaOHC4I/wDGiYX8NxslI/PFNTSAoKFvHt3dGHIDUBdTmZVOMKOMU/t7iK6Xb1foRSrV7ZYJN8Z8jcEDtS8sFL5C3GnYFG2UKE9e1U3MYRWAHuDUgCMMKlckPFzSeKewmrBxNJLHGGI2pRa38qXCtA2zAx1pWW24wM/arITghscDtQOKDjFDa+vZbmNDKpwowPehkuS0YRicDoDUklMsR5yF5ANUCMvJkDAroxtULzKui+B5GJCE4PWvUQxWONQo5716iWGIpYwyX/qRnxNuO1DyfhKfBb75NBrIU8yvnnGKIXcysCck0hQSE8QSe4+YYKO3XFUkfxmrJrDwFaVXOfQUErSO2ByegFNSHqKfQXaK8kpxg4FXbDI2N2G9M1WLae2TxHVk3Cqo45GbyZJo6Rkkux7aabBHbmV5fxSeFzSy/O2dx2Y5qUQmOI1U7h61DU0ZpCehIFPxvTpHQdsqsrb5mdVXpnrW+03SIPAVNoz61j/huFproJEMtnpX0q1h8KIZYKB1Ymt7LMarZO006BEA2A/lXZ9PjY52DP2o6zkttn7ZCPXNGiS1cgBxk+9Y46HRdmXurCPw2Cjg+1Z6XSIzI0uzcc96+jtbwMMFgR96Els7RvpZB96S4h6rZ82n0lgpdBgg9qU31o0TgyjC5646V9RntLJAQ08QJ96T6/oatpzzx7WTGQwORWq0Lkk+jL6TiFg6sGHcHrU9VUzMqeWksaSxOOu0HnBom4u5S6MQQpHfr1pjlUSaTIT2zRYUHK1SE3Lt6UZLcqIkAGfehi2X3KPLSbsxNAV6gXbhStUI7LjuDRupkvsoYlERCpyw7Vj0Mj0ExDp2/rRSkHpxQSzNIUJTaBXZrjw880UdATVuy+aQJzn8q9St5XmbJPFernIEZM0YVSpG7vViKWfySUJFHuY+1e3ec+YrilEziNre3eX8N2BHrSSeFrbUNvPB4prplykUmSSw96p1Cdbu8UhduGrU/oLHa0agJbXGmx+KQTj0pC8awynwsfnWp0fTI5YYyxOMdDSvXLWOK7aOMbftT3D4JgtWxS9wS3lG1u5FU3zF9jMPqApxbWEQgYscnFDxWD3doz4JYS7IwO//ADNFC49jMcJN0X/Ay7tSm9gMGm2qDULyaQKwSJSQqZ44oT4ItvCu7pTncqAfnTnVYL3w9sLRrn94n+la/j0WRVozMmn6nH0uogPTfzVunNqMcysbrcAegNSu9NuZAN2quM9VUED9KKsNNZZT+KWUDIPelylJ/YyGNL6NCJ7z5TcysV9fasnqc9/dSuI7kxqTyNxr6vY6f818OvDgeJ4J59Divm17pKpMwnZ0G3rg9fyoN2Mq0A2ek3f7Se+8v54/XpWt0G1uUJtjIZIJFKspOQeOCKzOmaTZxSM51N/EP0hQQRW5+G9JuLceIZiYyc4K7SPy6Ci5P9F8Evo+YG2b/MLpDxtYptND6kAJgoHQCtJq1oq69enO1PGIc46ZPFZzVFb/ADWa37o20tj0rcm48V2TZIN7KIUBLF+gr0jAvx0qVwwRcDrVUQ3HB710IVGmJiqB7okuuelRYRF1xx60dFYTX11HbRAB3bAJ6DvTDWPh22sYAy6iksu4DCrjtS5OnsqhFuNimIJsbb0PT2oG8Xb9NHC2MJC7i270oS5jkT61xXfYqXZyCF3h3Yr1PNH04S6c07yYVe3rXaxguxTbTgMw284qMeZJCQMg9qttofMze1X6dGsG+RyDk0KkjuCLLe0ITpg0NHkzgHqGprLOqkEcDFLLfzXDN/qpiRsYm80ucKsYz2rOa7OW1Jhu4zTC1uCrr9qzmqT79QZge9USfwSF1Uh1CxEDDHO2mPwWyu0yOebdzL9wR/cUkspDI2CcjpT74ZjWDUpN3EUsZjaly20OxPjIYaLCRq11P4W2OZhtx688VsLS0imj3GPnpu70klj+X8JUbciYB4x6/wB6dWl6saLk9uaJP9KfvRNtHtOW8FcigrmCKNxHFGEHXpiq9T18grbwZMjnt2pfd6ybEhZ4JZmc8uBkChTi2Mdrs3WgJiwdD3FATafGWdZY1JBPJpNafGsFqu4ReUD6e9ELrZ1+2eWC2mtjE2SzDG72rJNPo1JjSHSrZH3CJPvtFFkeDG2EA461nNM1/fuim+tTg0zutUV7NivYHNLtGSTMhb7LnVdYtZ4ABcsGVmHICcjH35r57eHxb64u2GN7E19ZvEtpIZLuNx4zRMigdBuGOP1r5RrYaK6aDjIPOKLHG3yJ/InVRQuUmR2ZvpFegf8AEY4qUieHHjPFTtYiYXkIOP8AnenNkyQ/+FbL5q8lvZ32wWy5YA8sSMAD3qHxZZ2dveQQ2RlbKAusnJU1XpNyLOxnncZwwVRnqT3/AJUC0k15I1xKMu3cD9MUjuQUXJXvROCLbNG7EBE9aE1yQTN5V4zV67o3/EOfY1XdMjP0rXG5ASfyRVAbmKGNN2IsZNeq82/iWZcMQRXq16DTQLFld20ZWoS8DAY4rtlcmHfvwVPWuXU8X/5nNSqO7MLSxkQc4x0rlmvmb71RHOCmc/lRemjxCxpuNttpmpsNe48N+Mjikkshe5PuaPuZD4xUjFBOFEmV4NG8r6B+xjYS+Hli35VobaZjpruvLGspEFAYu+DTGC/KhYkBIoHlrYLNPZavcqIopn3xkhTnqKdTXBiikYc7RxWNtLpHljVm85ZQMfetPM+xyp6dx60SnyRZhlYDYTh5mubuRUZhwM42ii7vUtPkBJud3A4HaqpNDttQgKyjEi8q4pvYW9qtoYbixEzKm0PEOc57inY21HQxq3vZmoobUXHjPexhc9PStVp+vaVHGIvm1K9DkcZNGRWWim5kI0qZmK4IEBx/tQ2r/D0F5ZrbxWsdnEVUMxA3nGc4H6UOwlTXTM/czJBqBurOYSqW5VcHvTu8v44LGeYsEGzv2JpZNo1ppsUcVqgUJwW9az/xlflLWGzHST8Rz7DI/of0pH2dOXGA+t9UtptOkme7LSLnGG/pWCmc3M8sjHOT1NThnj+XaOAketR8IqAueG71VGTcTzrbdsnZWD6hOY08sajLyHoorR6S2iIr2Eks5ilGDKSAuftSi5vVS2XT7XyxqfxH7yUPb25vLuC3ViDI4GfTNC9qwKcuzXatp+l2uklpUZ45G8VSrAED3FEQppaWK6hbiJInQZXPQ46fel2u6fM2lsysu2ALGoD5MiDvSCDxoYAjK4QHPPAJqfFFtu2MzRU0kjQX2lw6vam4s5MTKp4J+r+xrHSRMr4kBDKcEY6GnlrqUlg4ljBxnzKT1qn4tntpruG4tQAJIAWC+tdjUsT4vaFwi1KmKXuNkJTPWvUvuHPBbjPQVymMdQZr+mf5bPmBt9tJzG2c0sJrYavpo03RMb1uomJCup5Df2rHsrFcjigjJy7Mi9UyO4joaf6CPLms9gD6sitHoQATmmx7CfQv1Zil63NDbhnOau17/wC61AA0Mo7MoOVwrbutMfmLa0aKWA727rSaNsDBNGW6RsFZR5ieBQ8FQuWhlpZa61y28mA0qkgffNb3UIeA4GWHasv8M2iRa1GWffIEYkDoOMf2raypuVuKOEfiWxwzxL5qgPT3EyFN2WHIFRuxcQtmMFG++KDk8S0n8WIHFOYtbtmjBlQMfcUUeqGJtO0JxqeqBtomm/WnOkC+lJaUOSRyxzn9avGr6crb0SPPuKt/+SQNGVjUbugVaBjObaBb638SRbfPmZuaw/8AidD4Op2ca8D5cD9Ca3thG5n8WU5djnmsb/ixav8AMWc6DKrGwJ/P/wB0CAyRlKNJGT06MmMnsTRUzVHT/Larnr6V5wzvsVdzHoBVX0ef9kLc5nA/StDoNoyXQmiUtOgyCeFX+5ruk/Dz2RtdT1VtsDkjwoxucY7/AM6+kQXmgJpg/wAstfHnkUFfHTbz7e9KlLTV0dLG5r4synhyx2xiYqshYuVK44+/p9qvIiUCK5hWSCYeU9Sv50y1yKSGeFrwt8sU8rHgoO4oK1+QMvgNOSgyoVe4x1rz545e6mmIz4JYWldmN161WwmwsgeFxlD60kglS4uGTBKgdK0+p/D900bvbyq8ZBKBj7mlek/DN5GJJWkj8X/t5/rVnvQTVsaskVHsRawoBjIHHavVZrMUm5U2nKnkAZxXqY+xsXaNh8QkGxt44wuyEHKjvzWZeJcAumFPtTvULW9cb7dBNGx7cMv3rtnoWp3aGQ2km0Z4x0/OvPUtWQOX4Z6400TK7xHhRmitI4Xnr6UZdRujyWjKY2HXIxUbGOJSYlI3Dqc1ThyWxuLI+pCLXx/1ZPqKWAkdRTnXot10NnOO9AR2008nhxoS32p7eyyCc9R7B8dOeK2Gl29tBZb4lDuRwzDNB2miwEK8/JHVFPFMwoRAiABQMAClzjyVn0Hgei5JSWTNpL6Dvgu0kkvLq+c+X9mn9a1zAgYHWkHwfKoikgPBVzWlKD6qOD+KIPJTWaV/oHNArdcH86RahpoOWiO0ntWgd9zEChp12+9E6aEJOzKLaTySbcc+uTWy+HNHihj8SQhn65J4pZCA82AuOetaWzHh24wetJGMuaMKwYjH2rMf4gLltO3LmOTfG3vnB/vWphkzuWT8jWY/xAlBhsIupE5P8qXJ0ivw796K/wBmGltJrTgrlP4hzVmkzLFfIxiMuW/Zg7dx+/UU3B4A7elVm3hjZ5Y12Oyldy9h61R7i4l/qH8blTn47v8A0x5o93HrEeqNdkO8cYEW1fIMHkCi7eW3trWFGZQ2QVAPNJILiK0sQsWFReyDzGu2bfNxvekbRHjaPfPSuhiUtt9ng+B6Vl8nyHhzJwSGOqSXusXMa3sxljiyAvTaD2461Y9hBEqyjymPv7elJ2kmVi6yYfdnmibnUrt7RFkkAUHzbU5al5sLlfBlvqX8azYY+5hlyS7/AEZExW0Kx3FzGIjkqr/3oPxoYbkJaSRsJCAMcjn2oLUZ5LzRrmJV80GGB7FTWOsZpbWZZYz+IvIJqaGK43L/ACR8vLFrZ9EljggjuHSIPNIpJ8mSTiu1jh8RXYljIZRsz9I+qvVQm/sDjL9NncWkUQeQOFO76SAM0Z82ZtN+SMphDAgFD3rN35S6AuBKGxx4fOautbiC3iaC83BuNoHWoW4xpQ2dtu0IdTsNSt7gi8lLgDCS9moSytTBMZC+4t2FfQNWt47eyNtqbK8Eikxuv1dOOKycUCx8Rjj1PU1Xj6tKj2vTvSfK82V9R/f6KntonPnXcx7Dt96lFbJHwFAHcL3q4cDioyHy4om/0+68L0rx/Dj8Vb/T2RjHaq2aunNR61t6LZBOk3HyuoqW4WTg1tPGUoFDZ461g2G5fcdKf6ZdmSAHPPSuhL6Pm/VvE45PcXTG+4K2eoqmWUCuISU4oafNE5aPHUCUckSPwf503juA8ajt7VnY92+m9nu25IwKCwnGhlFMoGCKyPxVcG51K3jBz4YLGtE8gSNiTyBWOmc3F3LOTwW2j7UuR6fpXjvJnT+kSBqW7HSogV0iivR9sloiu1jjow9KLsbx7TcPDWSNvqXpQLg5V161aj7+vWuxza6FcIy00Wttckq3J5561Ysz/LmHy7GbJOOaoqaOF+oZ+1VY8mwpRVbOm1fwZI/mSqyRgkr6Z6VmLzS7m3meONGlA6Mg4NaC3vZnuZFXGzptPUdTXLjUVisIzt/GY5GBioJTnDLJLo/J/UocfKnS1bEem2UwDyGLBPA3rmvVfDqMyFwqBi/ADdvXFcp6ae2eXPlejVW0Yui5+W8IrjHfd9qIuYdJgt2e7ti90eEiLn9ft9+aCa+lhBVMK68DaelAO7sxZmJY9ST1pePC1Lk+vw+v9L/jc5pZPJ0vz+yU0skzBpnLsBgbucD0qmpZrhxTWz7iGOMIqMVSRw1X9bZ7VKQ4GB1ricDA6UqTt0c+6PMKqNX9ep5qqQKn1EUV6E5NHEkKtzRtpcG3lBIzG3DAdqUTX1uv7+W9hVDatt/ZRs33rCHN5PjuDx5HaPodr51GOVPIYd6jJas3Y1mtB111A8PaT+9E/f7VvtF1Gx1MbAfDuMfs3/5zRqSlo8PP4U4R9yHyj+iqKxOc7TTGO1fwwNtPktEGOi+9IvifWk0yP5e0ZTdv1OM+GPf3opKlbJMGOfkZFCC2Z/4nuRCRZxMBI3L4/dHYH3NIo1G2o3DPI7SOxd2OWY9SaHnuZ4WCxxBge5qe7Z9f42KHhY6ew7gda6f5Uv33cv76r9lq1IZB9crNW8y2Ody6iyxZAzNH6DIqQPOaoZPDkDDj1q3uR2PIoEzYyl9l+a6DVUbZTJ6ipqRToyHxaZNAFlEyjzDpSfVo58h2YmP7U4Bqu4j8eJ4/Xp96JqL39ng+sejYvKxSnFVOv+iC2cxyYCbiRgY6j3r1OUtVuFje0QDYwjmkJ/U16lppn5fOLg6aOhsPzUs0Ozc5qxXyuaJzP2SMl0SNczUd1eU5PPTFA5BciMhywx1qSioRjLFjVwFZHbsGKvZB13dapaFD1UGiDUSKJgyxxl2gNrVM52iqXtFHQCmBFQKZ60JNLxYP6FRgaNtyZVvUUZaahPBICzMQpyCDgg+1EGIHqK6IEHUCsYmHiyg/g6NlZfG0j6XIjqXulXbE5HB9dw9RWWmeWV2lkctIxyzHvQzzpAu1EDuaoYT3Lec4H8IrnNvsPFjxeO37cbk+66CGukT94ZqSuZcZHSqobQL2opUA6ChqyvGsstz6OqB6CrFqHSpijRXHRGZdy1Vu8qt/CcH7UT7UO6hXIxw3FZJAZF9o4W8Ob/S1TD4kCnoaocExlf3kqMj5iSQHpwaHlQn3OIbuxnPauI4Jx2qmR/KT6jNVxPll57VvOmM935UMrFZDLLHbLuLRs5UqAPvmvVCC+ksgZY4xIcY2kZBr1a0rPg/WfBnj8t8I6exVnNWREFTVFdDEI+Kxs+ujOnZcTxjvmpE4QgdScVWPrPsak31L9s0I1SLUHGKn0rg4rtOSpFMVSPYrhqRrlYzaI4rmK7XTWGURNQb6gPU1YaqP1r96xi5HFiXflhmrwgFeYc5qL8dKxIKMFGy0Cu5rkZz1q23QSXKRt0Y4JHWjSsZySVkMAEjNdPlxuGD78U71opp8ng2kMSBV25KBi3lHXPWl41i+WeNzNuO3o6g9qNxS7ZMvJm1yitA45xjvVcibkxjmnuoWkD6VDfLEscrttYJwp98UmPHStnGtFGHKs8bA24YMe/lahm8qSx+nIoyZRhh6jNAyknaf4lwallpknkLiywvmAEn2rkTeYVCTiFMVyEnk1gpT+SDg+0bvQ16qGJMTZr1bza6G5Wm1aP/Z" width="203">
-        <h2>Studies and Experience</h2>
-        <p>As an Economics and Psychology double major, my goal is to combine my understanding of quantitative tools for modeling and outcome optimization with my 
-            understanding of human behavior and decision-making to design user-centered models that positively impact policy, experience, and well-being in the communities 
-            I belong to.<br>
-            As you browse through this brief introduction of myself, I hope you see my curiosity, attention to detail as well as my desire to make an impact. Although, I Obviously, I 
-            would love to do that using data-backed insights, but sometimes sometimes we find paths in unexpected places that lead us down differnet roads; whichever road 
-            I end up on, I hope to continue to learn and grow. <br>
-            Beneath all of the academic and professional speak, I love going camping and just being outside in general. Going to school in NorCal has made me feel closer to 
-            and more connected with nature, so I have definitely leaned into that side of life as of late. When I'm camping I love to disconnect from the world. I'll pull 
-            out my phone to take an occasional picture, but aside from the that the phone is out of sight and out of mind. When I am on my phone, however, I love queing up 
-            artists like Faye Webster, Nia Archives, Phantogram, and A$AP Rocky. I will say I am a beat/rhythym/flow type of guy rather than lyrics head when it comes to 
-            music taste, so please do not judge lol. <br>
-            My relevant studies include courses in consumer choice theory, data analytics, econometrics, and statistical research methods. Each required me to understand 
-            statistical models such as chi-squared, regressions, covariance, ANOVAs, etc. The courses also provided the opportunity to apply these models to data using R 
-            as well as practice interpreting the results. I have experience creating visualizations such as graphs and tables, and I am learning segmentation in R. <br>
-            Outside of class during my free time I am teaching myself how to use Python. I have translated many of the skills I have learned through my coursework into Python 
-            while teaching myself how to use some of its libraries such as pandas and matplotlib. I have a good understanding of branching, looping, and the basic data structures 
-            like lists, dictionaries, tuples, and sets. I also took some time to learn some basic HTML so that I could do some web scraping and create a simple search engine.
-        </p>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lucas Ibarra — Market Researcher & Community Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        <h2> Writing Sample: Public Transit Use and Commute Patterns Influence on Urban Housing Prices</h2>
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS0NXr81696WUHr9SkL71UxK8wfsgZ4p9xcrxVBLXtTWGrot04gsHWNQ5a7Okh-HNaPIKV0SX-FCU2V/pub?embedded=true", width="850" height="1100"></iframe>
+:root {
+  --bg: #f5f3ee;
+  --ink: #18170f;
+  --ink-mid: #5a5848;
+  --ink-faint: #a09e94;
+  --rule: rgba(24,23,15,0.12);
+  --accent: #2a2a1a;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'Space Grotesk', sans-serif;
+}
 
-        <h2>Exploratory Data Analysis with R</h2>
-        <a target="_blank" href="https://rpubs.com/libarra27/1261053">See here</a>
-        
-        <h2>Exploratory Data Analysis with Python</h2>
-        <iframe src="https://www.kaggle.com/embed/lucasibarra/shopping-trends-eda?kernelSessionId=215603825" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Shopping Trends EDA"></iframe>
-        <h2>SQL</h2>
-        <h2><a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-data-dig-practice-with-ctes/4845933085245440">Spin-off of "Project: Data dig" (practice with CTEs)</a></h2><script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-data-dig-practice-with-ctes/4845933085245440/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script><p>Made using: <a href="http://www.khanacademy.org/computer-programming">Khan Academy Computer Science</a></p>
-    </body>
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ─── NAV ─── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid var(--rule);
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(245,243,238,0.95);
+  backdrop-filter: blur(6px);
+}
+
+.nav-logo {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--ink); }
+
+/* ─── HERO HEADER ─── */
+.hero-header {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.5rem 4rem 0;
+}
+
+.hero-header-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0;
+}
+
+.hero-header-meta span {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+/* ─── HERO ─── */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 3rem;
+  padding: 3rem 4rem 4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-left {}
+
+.hero-intro {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--ink-mid);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: clamp(5rem, 10vw, 9rem);
+  line-height: 0.95;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.hero-name span { display: block; }
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--ink-mid);
+  max-width: 520px;
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.hero-cta { display: flex; gap: 1.5rem; align-items: center; }
+
+.hero-cta a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.hero-cta a:hover { opacity: 0.5; }
+
+.hero-cta a.secondary {
+  border-bottom-color: var(--ink-faint);
+  color: var(--ink-mid);
+  font-weight: 400;
+}
+
+.hero-right {
+  width: 260px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.hero-portrait {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  background: #d8d4c8;
+  /* placeholder gradient if no image */
+  background: linear-gradient(160deg, #ccc8bc 0%, #b0ac9f 100%);
+  position: relative;
+}
+
+/* placeholder silhouette */
+.portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: linear-gradient(160deg, #d4d0c4 0%, #b8b4a8 100%);
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portrait-placeholder svg { width: 65%; opacity: 0.35; }
+
+/* ─── SECTION BASE ─── */
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* ─── ABOUT ─── */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--rule);
+}
+
+.about-left {
+  padding: 4rem;
+  border-right: 1px solid var(--rule);
+}
+
+.about-right {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 2.5vw, 2.75rem);
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+}
+
+.about-heading em { font-style: italic; }
+
+.about-body {
+  font-size: 0.95rem;
+  color: var(--ink-mid);
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.about-body p + p { margin-top: 1rem; }
+
+.about-image-wrap { flex: 1; min-height: 0; }
+
+.about-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 4px;
+  background: linear-gradient(140deg, #cac6ba 0%, #a8a49a 100%);
+  display: block;
+}
+
+.about-caption {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+.about-meta-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.about-meta-row { border-top: 1px solid var(--rule); padding-top: 1.1rem; }
+
+.about-meta-key {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+}
+
+.about-meta-val {
+  font-size: 0.9rem;
+  color: var(--ink);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ─── WORK ─── */
+#work {
+  border-bottom: 1px solid var(--rule);
+}
+
+.work-header {
+  padding: 3rem 4rem 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.work-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 2.5vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.work-heading em { font-style: italic; }
+
+.work-list {}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-item:hover { background: rgba(24,23,15,0.03); }
+
+.work-item-image-wrap {
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  position: relative;
+}
+
+.work-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.work-item:hover .work-item-image { transform: scale(1.04); }
+
+/* gradient placeholder backgrounds per item */
+.img-1 { background: linear-gradient(135deg, #c8d4c0 0%, #9aac90 100%); }
+.img-2 { background: linear-gradient(135deg, #d4c8b8 0%, #b0a090 100%); }
+.img-3 { background: linear-gradient(135deg, #b8c8d4 0%, #8aa0b0 100%); }
+.img-4 { background: linear-gradient(135deg, #c8c0d4 0%, #a090b0 100%); }
+.img-5 { background: linear-gradient(135deg, #d4ccb8 0%, #b8ac90 100%); }
+
+.work-item-body {
+  padding: 2.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.25rem;
+}
+
+.work-type {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.work-num {
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+.work-item-title {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 1.8vw, 1.7rem);
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+}
+
+.work-item-desc {
+  font-size: 0.9rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+}
+
+.work-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.work-tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-mid);
+  border: 1px solid var(--rule);
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+}
+
+/* ─── CONTACT ─── */
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--rule);
+}
+
+.contact-left {
+  padding: 4rem;
+  border-right: 1px solid var(--rule);
+}
+
+.contact-section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.contact-heading {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 2.5vw, 2.75rem);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.contact-heading em { font-style: italic; }
+
+.contact-desc {
+  font-size: 0.95rem;
+  color: var(--ink-mid);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.contact-email {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+  display: inline-block;
+}
+
+.contact-email:hover { opacity: 0.5; }
+
+.contact-right {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.contact-row:first-child { border-top: 1px solid var(--rule); }
+
+.contact-row-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.contact-row-val {
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.contact-row-val a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.2s;
+}
+
+.contact-row-val a:hover { border-color: var(--ink); }
+
+/* ─── FOOTER ─── */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem 4rem;
+  gap: 2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.footer-col {}
+
+.footer-name {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+.footer-heading {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--ink-mid);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.footer-links a:hover { color: var(--ink); border-color: var(--rule); }
+
+.footer-copy {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ─── FADE IN ─── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible { opacity: 1; transform: none; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 860px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+
+  .hero-header { padding: 1rem 1.5rem 0; }
+  .hero { grid-template-columns: 1fr; padding: 2rem 1.5rem 3rem; gap: 2rem; }
+  .hero-name { font-size: clamp(3.5rem, 14vw, 5rem); }
+  .hero-right { width: 180px; margin: 0 auto; }
+
+  #about { grid-template-columns: 1fr; }
+  .about-left { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule); }
+  .about-right { padding: 2.5rem 1.5rem; }
+
+  .work-header { padding: 2rem 1.5rem 1.5rem; }
+  .work-item { grid-template-columns: 1fr; }
+  .work-item-image-wrap { aspect-ratio: 16/9; }
+  .work-item-body { padding: 1.5rem; }
+
+  #contact { grid-template-columns: 1fr; }
+  .contact-left { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid var(--rule); }
+  .contact-right { padding: 2.5rem 1.5rem; }
+
+  footer { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
+  .footer-copy { flex-direction: column; gap: 0.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Lucas Ibarra</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO HEADER BAR -->
+<div class="hero-header">
+  <div class="hero-header-meta">
+    <span>Portfolio</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left fade-up">
+    <p class="hero-intro">Hello, I'm</p>
+    <h1 class="hero-name">
+      <span>Alex</span>
+      <span>Morgan.</span>
+    </h1>
+    <p class="hero-desc">An aspiring market researcher with a soft spot for the messy middle — building community, untangling complex problems, and telling stories with data that people actually want to read.</p>
+    <div class="hero-cta">
+      <a href="#work">See the work ↓</a>
+      <a href="#contact" class="secondary">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-right fade-up" style="transition-delay:0.15s">
+    <div class="portrait-placeholder">
+      <!-- Simple person silhouette SVG -->
+      <svg viewBox="0 0 100 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="38" r="22" fill="#18170f"/>
+        <path d="M10 130 C10 90 90 90 90 130" fill="#18170f"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left fade-up">
+    <p class="section-label">About</p>
+    <h2 class="about-heading">I look for the story <em>under</em> the spreadsheet.</h2>
+    <div class="about-body">
+      <p>I'm trained equally in surveys, statistics, and the slower craft of sitting with people long enough to hear what they actually mean.</p>
+      <p>My work lives at the intersection of community building, complex problem solving, and data storytelling. I'm most useful when a team has more questions than answers and needs someone to organize the fog.</p>
+      <p>Outside of work I write a small newsletter on civic life, cook for friends, and keep a running list of bus routes worth riding end to end.</p>
+    </div>
+  </div>
+
+  <div class="about-right fade-up" style="transition-delay:0.1s">
+    <div class="about-image-wrap">
+      <div class="about-image img-2" style="min-height:220px; border-radius:4px;"></div>
+      <p class="about-caption">Field notes, somewhere on the 14 bus route.</p>
+    </div>
+    <div class="about-meta-grid">
+      <div class="about-meta-row">
+        <p class="about-meta-key">Toolkit</p>
+        <p class="about-meta-val">Qualtrics · SPSS · R · Python · Tableau</p>
+      </div>
+      <div class="about-meta-row">
+        <p class="about-meta-key">Methods</p>
+        <p class="about-meta-val">Field interviews, segmentation, conjoint</p>
+      </div>
+      <div class="about-meta-row">
+        <p class="about-meta-key">Based in</p>
+        <p class="about-meta-val">San Francisco, CA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="work-header fade-up">
+    <p class="section-label">Selected work</p>
+    <h2 class="work-heading">Papers, decks &amp; <em>data stories</em></h2>
+  </div>
+
+  <div class="work-list">
+
+    <a class="work-item fade-up" href="#">
+      <div class="work-item-image-wrap">
+        <div class="work-item-image img-1"></div>
+      </div>
+      <div class="work-item-body">
+        <div>
+          <div class="work-item-meta">
+            <span class="work-type">Research Paper</span>
+            <span class="work-num">№ 01 · 2025</span>
+          </div>
+          <h3 class="work-item-title">Where We Gather: Mapping the Decline of Third Places</h3>
+          <p class="work-item-desc">A mixed-methods study on the social geography of cafés, libraries, and parks across three mid-sized U.S. cities — and what their disappearance means for civic trust.</p>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">ethnography</span>
+          <span class="work-tag">GIS</span>
+          <span class="work-tag">civic</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="work-item fade-up" href="#">
+      <div class="work-item-image-wrap">
+        <div class="work-item-image img-2"></div>
+      </div>
+      <div class="work-item-body">
+        <div>
+          <div class="work-item-meta">
+            <span class="work-type">Slide Deck</span>
+            <span class="work-num">№ 02 · 2024</span>
+          </div>
+          <h3 class="work-item-title">The Gen Z Grocery Run</h3>
+          <p class="work-item-desc">How a generation raised on delivery apps shops the perimeter. Segmentation deck for a national grocer.</p>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">segmentation</span>
+          <span class="work-tag">retail</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="work-item fade-up" href="#">
+      <div class="work-item-image-wrap">
+        <div class="work-item-image img-3"></div>
+      </div>
+      <div class="work-item-body">
+        <div>
+          <div class="work-item-meta">
+            <span class="work-type">Data Story</span>
+            <span class="work-num">№ 03 · 2024</span>
+          </div>
+          <h3 class="work-item-title">A Loneliness Index for Small Towns</h3>
+          <p class="work-item-desc">Combining ACS data, Yelp density, and a 600-person survey to surface the towns where connection is hardest to find.</p>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">data viz</span>
+          <span class="work-tag">civic</span>
+          <span class="work-tag">survey</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="work-item fade-up" href="#">
+      <div class="work-item-image-wrap">
+        <div class="work-item-image img-4"></div>
+      </div>
+      <div class="work-item-body">
+        <div>
+          <div class="work-item-meta">
+            <span class="work-type">Field Study</span>
+            <span class="work-num">№ 04 · 2023</span>
+          </div>
+          <h3 class="work-item-title">Trust at the Teller Window</h3>
+          <p class="work-item-desc">Six weeks of in-branch observation across rural credit unions, told through field notes and member portraits.</p>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">ethnography</span>
+          <span class="work-tag">finance</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="work-item fade-up" href="#">
+      <div class="work-item-image-wrap">
+        <div class="work-item-image img-5"></div>
+      </div>
+      <div class="work-item-body">
+        <div>
+          <div class="work-item-meta">
+            <span class="work-type">Slide Deck</span>
+            <span class="work-num">№ 05 · 2023</span>
+          </div>
+          <h3 class="work-item-title">The Creator Economy, Quietly Maturing</h3>
+          <p class="work-item-desc">Why the headline-grabbing chaos hides a slower, sturdier story about full-time independent work.</p>
+        </div>
+        <div class="work-tags">
+          <span class="work-tag">economy</span>
+          <span class="work-tag">platforms</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left fade-up">
+    <p class="contact-section-label">Letters to the editor</p>
+    <h2 class="contact-heading">Say <em>hello.</em></h2>
+    <p class="contact-desc">Project inquiries, collaborations, coffee, or a question about something I wrote — all welcome.</p>
+    <a href="mailto:hello@alexmorgan.com" class="contact-email">hello@alexmorgan.com →</a>
+  </div>
+
+  <div class="contact-right fade-up" style="transition-delay:0.1s">
+    <div class="contact-row">
+      <span class="contact-row-label">LinkedIn</span>
+      <span class="contact-row-val"><a href="#">/in/alexmorgan</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-row-label">Substack</span>
+      <span class="contact-row-val"><a href="#">alexmorgan.substack</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-row-label">Response</span>
+      <span class="contact-row-val">Within two business days</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-col">
+    <p class="footer-name">Lucas Ibarra</p>
+    <p class="footer-tagline">A portfolio of research, slide decks, and stories told with data.</p>
+  </div>
+
+  <div class="footer-col">
+    <p class="footer-heading">Elsewhere</p>
+    <ul class="footer-links">
+      <li><a href="mailto:hello@alexmorgan.com">hello@alexmorgan.com</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Substack</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col">
+    <p class="footer-heading">Colophon</p>
+    <p class="footer-tagline" style="font-size:0.8rem;">Set in DM Serif Display &amp; Space Grotesk.</p>
+  </div>
+
+  <div class="footer-copy">
+    <span>© 2026</span>
+    <span>Lucas Ibarra — Market Researcher</span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+</script>
+</body>
 </html>
